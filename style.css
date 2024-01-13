@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+  :root{
+    --width-content: 1000px;
+  }
+
 body{
     height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 
@@ -14,29 +22,85 @@ body{
 }
 
 .header{
+    padding: 18px;
+}
+
+.header-content{
     display: flex;
     justify-content: space-between;
+    max-width: var(--width-content);
+    margin: auto;
+    align-items: center;
 }
 
 .header ul{
     display: flex;
+    gap: 18px;
+    padding: 0;
 }
 
 .header li{
     list-style: none;
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .logo{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 900;
 }
 
 .hero{
-    font-size: 48px;
-    font-weight: 900;
     background-color: #1F2937;
+    height: 400px;
+}
+
+.hero-container{
+    display: flex;
+    max-width: var(--width-content);
+    height: 250px;
+    margin: auto;
+    gap: 50px;
+    color:#F9FAF8;
+}
+
+.hero-content{
+    flex-grow: 1;
+}
+
+.hero-h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
 
 }
+
+.hero-p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.button{
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px 35px;
+    border-radius: 8px;
+    border-style: none;
+}
+
+.hero-figure{
+    background-image: url(./imagenes/formas-papel-psicodelico-multicolor.jpg);
+    min-width: 50%;
+    margin: 0;
+}
+
+
+.hero-img{
+    display: none;
+}
+
 
 .main{
     flex: 1;
@@ -45,9 +109,32 @@ body{
 }
 
 .info{
+    color: #1F2937;
+    height: 500px;
+}
+
+.info-content{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.info-h2{
     font-size: 36px;
     font-weight: 900;
-    color: #1F2937;
+
+}
+
+.info-img{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+.info-img img{
+    width: 175px;
+    border-radius: 15px;
+    border: 5px solid #3882F6;
 }
 
 .button{
@@ -56,7 +143,27 @@ body{
 
 .quote{
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
 
+.quote-text{
+    max-width: 800px;
+    color: #1F2937;
+}
+
+.quote-p{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: light;
+}
+
+.quote-name{
+    font-weight: 700;
+    text-align: right;
+    font-size: 24px;
 }
 
 .footer{
