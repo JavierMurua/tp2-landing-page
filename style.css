@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 
-  :root{
+:root{
     --width-content: 1000px;
-  }
+    --color-1: #1F2937;
+    --color-2: #F9FAF8;
+    --color-3: #E5E7EB;
+    --color-4: #3882F6;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 body{
+    display: flex;
     height: 100vh;
     margin: 0;
     padding: 0;
-    display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     
@@ -16,8 +26,8 @@ body{
 
 
 .header, footer{
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: var(--color-1);
+    color: var(--color-2);
     min-height: 100px;
 }
 
@@ -42,17 +52,17 @@ body{
 .header li{
     list-style: none;
     font-size: 18px;
-    color: #E5E7EB;
+    color: var(--color-3);
 }
 
 .logo{
     font-size: 24px;
-    color: #F9FAF8;
+    color: var(--color-2);
     font-weight: 900;
 }
 
 .hero{
-    background-color: #1F2937;
+    background-color: var(--color-1);
     height: 400px;
 }
 
@@ -62,7 +72,8 @@ body{
     height: 250px;
     margin: auto;
     gap: 50px;
-    color:#F9FAF8;
+    color:var(--color-2);
+    padding: 0 10px;
 }
 
 .hero-content{
@@ -78,11 +89,11 @@ body{
 
 .hero-p{
     font-size: 18px;
-    color: #E5E7EB;
+    color: var(--color-3);
 }
 
 .button{
-    color: #F9FAF8;
+    color: var(--color-2);
     font-size: 18px;
     font-weight: 700;
     padding: 8px 35px;
@@ -90,26 +101,25 @@ body{
     border-style: none;
 }
 
+.button-2{
+    border: 3px solid var(--color-2);
+}
+
 .hero-figure{
     background-image: url(./imagenes/formas-papel-psicodelico-multicolor.jpg);
     min-width: 50%;
     margin: 0;
+    background-size: cover;
 }
-
-
-.hero-img{
-    display: none;
-}
-
 
 .main{
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
 }
 
 .info{
-    color: #1F2937;
+    color: var(--color-1);
     height: 500px;
 }
 
@@ -134,24 +144,21 @@ body{
 .info-img img{
     width: 175px;
     border-radius: 15px;
-    border: 5px solid #3882F6;
+    border: 5px solid var(--color-4);
 }
 
 .button{
-    background-color: #3882F6;
+    background-color: var(--color-4);
 }
 
 .quote{
-    background-color: #E5E7EB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: var(--color-3);
     height: 450px;
 }
 
 .quote-text{
     max-width: 800px;
-    color: #1F2937;
+    color: var(--color-1);
 }
 
 .quote-p{
@@ -166,8 +173,26 @@ body{
     font-size: 24px;
 }
 
-.footer{
+.call{
+    height: 400px;
+}
+
+.call-box{
     display: flex;
-    justify-content: center;
+    background-color: var(--color-4);
+    max-width: var(--width-content);
+    height: 150px;
+    border-radius: 5px;
+    color: var(--color-3);
+    flex: 1;
+    justify-content: space-around;
     align-items: center;
+}
+
+.call-h2{
+    margin: 0;
+}
+
+.call-p{
+    margin: 0;
 }
